@@ -1,4 +1,5 @@
 import { useTranslation } from "../../hooks/useTranslation";
+import { getAssetPath } from "../../utils/assetPath";
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -102,7 +103,7 @@ export const Hero = () => {
               }}
             >
               <img
-                src="/images/profile.jpg"
+                src={getAssetPath("images/profile.jpg")}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />

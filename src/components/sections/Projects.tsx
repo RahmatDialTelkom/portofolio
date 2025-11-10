@@ -2,6 +2,7 @@ import { ExternalLink } from "lucide-react";
 import { useTranslation } from "../../hooks/useTranslation";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import { projects } from "../../constants/projects";
+import { getAssetPath } from "../../utils/assetPath";
 
 export const Projects = () => {
   const { t } = useTranslation();
@@ -39,7 +40,7 @@ export const Projects = () => {
               {/* Project Image */}
               <div className="overflow-hidden">
                 <img
-                  src={project.image}
+                  src={getAssetPath(project.image)}
                   alt={t(project.titleKey as any)}
                   className="w-full h-48 object-cover transition-transform hover:scale-110"
                 />

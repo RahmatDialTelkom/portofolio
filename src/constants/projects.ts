@@ -32,7 +32,7 @@
 export const projects = [
   {
     id: 1,
-    image: "/images/snake game.png",
+    image: "images/snake game.png",
     titleKey: "project1Title",
     descKey: "project1Desc",
     technologies: ["HTML", "CSS", "JavaScript", "Canvas API"],
@@ -40,7 +40,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: "/images/space invaders.png",
+    image: "images/space invaders.png",
     titleKey: "project2Title",
     descKey: "project2Desc",
     technologies: ["HTML", "CSS", "JavaScript", "Canvas API"],
@@ -48,7 +48,7 @@ export const projects = [
   },
   {
     id: 3,
-    image: "/images/flappy bird.png",
+    image: "images/flappy bird.png",
     titleKey: "project3Title",
     descKey: "project3Desc",
     technologies: ["HTML", "CSS", "JavaScript", "Canvas API"],
@@ -56,7 +56,7 @@ export const projects = [
   },
   {
     id: 4,
-    image: "/images/tetris rahmat.png",
+    image: "images/tetris rahmat.png",
     titleKey: "project4Title",
     descKey: "project4Desc",
     technologies: ["HTML", "CSS", "JavaScript", "Canvas API"],
