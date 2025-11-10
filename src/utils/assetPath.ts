@@ -5,8 +5,16 @@
 export const getAssetPath = (path: string): string => {
   // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  
-  // In production, Vite will replace import.meta.env.BASE_URL with the actual base URL
-  return `${import.meta.env.BASE_URL}${cleanPath}`;
+
+  // Use absolute URL for production to ensure images always load
+  const isDev = import.meta.env.DEV;
+
+  if (isDev) {
+    // Development: use relative path
+    return `/${cleanPath}`;
+  } else {
+    // Production: use absolute URL to GitHub Pages
+    return `https://rahmatdial-prjct.github.io/portofolio/${cleanPath}`;
+  }
 };
 
