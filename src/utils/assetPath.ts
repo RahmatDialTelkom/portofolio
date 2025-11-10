@@ -14,7 +14,7 @@ export const getAssetPath = (path: string): string => {
     return `/${cleanPath}`;
   } else {
     // Production: use absolute URL to GitHub Pages
-    return `https://rahmatdial-prjct.github.io/portofolio/${cleanPath}`;
+    return `https://rahmatdialtelkom.github.io/portofolio/${cleanPath}`;
   }
 };
 
